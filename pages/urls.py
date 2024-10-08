@@ -5,4 +5,6 @@ from .views import homePageView
 urlpatterns = [
 
     path("", homePageView , name="home"),
+    path("admin/", admin.site.urls),
+    path("", include("pages.urls")), 
 ]
